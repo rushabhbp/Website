@@ -1,0 +1,149 @@
+label.required:after
+{
+    content: " *"; color: red;
+}
+
+body{
+    
+    background-color: #1B4961;
+    position: absolute;
+    width:100%
+}
+a.disabled {
+    /*pointer-events: none;*/
+    
+}
+linkglyright.enabled{
+    pointer-events: auto;
+    
+}
+.bt{
+   
+}
+#form1{
+   
+    width:auto;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    padding-bottom: 1%;
+    padding-top: 2%;
+   text-align: center;
+    
+}
+#panel1{
+    width: 100%;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.container{
+    text-align: center  ;
+    
+}
+
+
+#favourites{
+    width: 95%;
+     margin: auto;
+}
+
+
+
+#first-panel{
+    width:100%;
+    overflow: auto;
+}
+
+#fav-table{
+    /*width: 100%*/;
+    /*display: block;*/
+        white-space: nowrap;
+        /*overflow:scroll;*/
+}
+
+#label1{
+    float: left;
+    padding-left: 2%;
+}
+/*#inputsymbol{
+    
+     float: left;
+    margin-left: 2%;
+     padding-left: 2%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    height: 5%;
+}*/
+
+tr:nth-child(odd) {background-color: #f2f2f2}
+table {
+    border-collapse: collapse;
+    
+    float: left;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.fb{
+     width:10%; 
+    height:10%;
+    float: :right;
+    
+}
+#fbimage{
+  /*  height: 100%;*/
+    width:30px;
+}
+#bstar{
+ 
+     background: #f2f2f2;
+
+}
+#bstar:focus{
+   /* background: white;*/
+    outline: none;
+    
+}
+.glyphicon glyphicon-star{
+    color: yellow;
+}
+.custom{
+    color: yellow;
+    
+}
+.custom:focus{
+     color: yellow;
+}
+
+.glyphicon.glyphicon-chevron-right {
+    height: 20px;   
+    width: 15px;
+    
+}
+
+/*.ui-helper-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}*/
+ui-autocomplete ui-front ui-menu ui-widget ui-widget-content{
+    list-style-type:none;
+        background-color:white;
+ /*  // width:40px;*/
+    border-style: groove;
+}
+.nav nav-pills ul{
+    list-style-type:inherit;
+    width: auto;
+    border-style:none;

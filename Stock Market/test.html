@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>jQuery UI Autocomplete - Remote JSONP datasource</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+ 
+  <style>
+ 
+  #city { width: 25em; }
+  </style>
+  <script>
+  $(function() {
+    
+ 
+    $( "#city" ).autocomplete({
+      source:function(request,response){
+         
+           $.ajax({
+          url: "ajax.php",
+               method:"GET",
+          dataType: "json",
+          data:{
+              input:request.term
+          },
+            
+            success:function(data)
+               {
+                  console.log("ffff");
+               },
+               error:function(jqXHR, textStatus, errorThrown){
+               console.log("error="+textStatus+" "+errorThrown);
+           }
+               
+        });
+         
+      },
+        minLength:1
+        
+        });
+        
+      
+    });
+  
+  </script>
+    </head>
+    
+    <body>
+    <input type="text" id="city">
+    
+    </body>
+</html>
